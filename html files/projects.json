@@ -1,0 +1,92 @@
+[
+  {
+    "title": "E-Commerce Platform",
+    "description": "A complete e-commerce solution with payment integration.",
+    "link": "#",
+    "icon": "fas fa-shopping-cart"
+  },
+  {
+    "title": "Smarten",
+    "description": "A new micro which is helping to automate work and save time.",
+    "link": "#",
+    "icon": "fas fa-cogs"
+  },
+  {
+    "title": "Excel-beta version",
+    "description": "A new power-query function in Excel for working on big data easily and smoothly.",
+    "link": "#",
+    "icon": "fas fa-table"
+  },
+  {
+    "title": "Calculator",
+    "description": "Calculator with new features and new calculation.",
+    "link": "#",
+    "icon": "fas fa-calculator"
+  },
+  {
+    "title": "Social Media App",
+    "description": "A social platform with real-time messaging and posts.",
+    "link": "#",
+    "icon": "fas fa-comments"
+  },
+  {
+    "title": "Portfolio Website",
+    "description": "A responsive portfolio website to showcase my skills.",
+    "link": "#",
+    "icon": "fas fa-user-circle"
+  },
+  {
+    "title": "Weather App",
+    "description": "A weather forecasting app with real-time updates.",
+    "link": "#",
+    "icon": "fas fa-cloud-sun"
+  },
+  {
+    "title": "Task Manager",
+    "description": "An app to organize and manage daily tasks efficiently.",
+    "link": "#",
+    "icon": "fas fa-tasks"
+  },
+  {
+    "title": "Blogging Platform",
+    "description": "A blogging site with an intuitive interface and rich text editor.",
+    "link": "#",
+    "icon": "fas fa-blog"
+  },
+  {
+    "title": "Video Streaming App",
+    "description": "An app for streaming high-quality videos with adaptive bitrate.",
+    "link": "#",
+    "icon": "fas fa-video"
+  },
+  {
+    "title": "Fitness Tracker",
+    "description": "An app to track fitness activities and goals with analytics.",
+    "link": "#",
+    "icon": "fas fa-dumbbell"
+  },
+  {
+    "title": "E-Learning Platform",
+    "description": "An online education platform with interactive courses.",
+    "link": "#",
+    "icon": "fas fa-graduation-cap"
+  },
+  {
+    "title": "Recipe App",
+    "description": "A recipe sharing platform with filters for dietary preferences.",
+    "link": "#",
+    "icon": "fas fa-utensils"
+  },
+  {
+    "title": "Inventory Management System",
+    "description": "A tool to manage and track inventory levels in real time.",
+    "link": "#",
+    "icon": "fas fa-boxes"
+  },
+  {
+    "title": "Travel Booking Platform",
+    "description": "A travel booking website for flights, hotels, and car rentals.",
+    "link": "#",
+    "icon": "fas fa-plane"
+  }
+]
