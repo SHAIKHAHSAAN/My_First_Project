@@ -274,8 +274,7 @@ nav .logo1:hover {
 #contact button {
   background: #4e54c8;
   color: white;
-  font-weight: bold;
-  transition: background 0.3s ease;
+  
 }
 
 #contact button:hover {
