@@ -1,0 +1,437 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+/* Navbar */
+/* Navbar */
+nav {
+  background-color: rgba(23, 15, 15, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 10px 20px;
+}
+
+nav .logo {
+  color: white;
+  font-size: 2rem;
+  margin-left: 20px;
+}
+
+nav .logo1 {
+  font-size: 1.3rem;
+  margin-right: 20px;
+  background-color: rgba(23, 150, 170, 0.2);
+  color: white;
+  border-radius: 30px;
+  padding: 5px 10px;
+}
+
+nav .logo1:hover {
+  background-color: white;
+  color: black;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding: 5px 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(23, 15, 15, 0.9);
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  nav .logo1 {
+    display: none; /* Hide resume button in mobile view */
+  }
+}
+
+
+/* Hero Section */
+.hero {
+  height: 70vh;
+  background: url("photos/polygon-scatter-haikei.svg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-btn-container {
+  display: flex;
+  gap: 15px; /* Space between the buttons */
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-align: center;
+  color: blue;
+  background-color: white;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.hero-btn:hover {
+  background: blue;
+  color: white;
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+
+/* About Section */
+#about {
+  text-align: center;
+  background: #f9f9f9;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease;
+}
+
+#about p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  animation: fadeIn 2s ease;
+}
+
+/* Skills Section */
+#skills .skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  text-align: center;
+  animation: fadeIn 2s ease;
+}
+
+#skills .skill {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#skills .skill:hover {
+  transform: translateY(-10px);
+}
+
+/* Projects Section */
+#project .project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  animation: fadeIn 2s ease;
+}
+
+.projectt {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.projectt:hover {
+  transform: scale(1.05);
+}
+
+.pro-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #4e54c8;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.pro-btn:hover {
+  background-color: white;
+  color: #4e54c8;
+  transform: scale(1.1);
+}
+
+/* Contact Section */
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeIn 2s ease;
+}
+
+#contact input,
+#contact textarea,
+#contact button {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#contact button {
+  background: #4e54c8;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+#contact button:hover {
+  background: #333;
+}
+
+/* Footer */
+/* Footer Styles */
+footer {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  padding: 40px 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-left h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.footer-middle h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-middle ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-middle ul li {
+  margin-bottom: 8px;
+}
+
+.footer-middle ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-middle ul li a:hover {
+  color: #ffcc00;
+}
+
+.footer-right h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-right .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-right .social-icons a {
+  color: white;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-right .social-icons a:hover {
+  color: #ffcc00;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 10px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    margin-bottom: 20px;
+  }
+
+  .footer-right .social-icons {
+    justify-content: center;
+  }
+}
+footer a,
+footer i {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+/* https://www.freepik.com/icons#from_element=home_verticals   */
